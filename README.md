@@ -1,4 +1,4 @@
-# CyberGIS Compute Hello World Example
+# CyberGIS Compute CVMFS Hello World Example
 Example project on how to modify your code to run on CyberGIS Compute.
 
 ## Specify How You'd Like to Run Your Project
@@ -8,8 +8,11 @@ In the file, you should include some basic information like:
 - `name: string`: name of the project
 - `description: string`: a brief description
 - `container: string`: the container environment to run your code on
-  - available containers: `python`
+  - available containers: `cybergisx/0.8.0`
   - for custom container environment, contact xxx@illinois.edu
+- `connector: string` configure singcvmfs connector, otherwise defaults to singularity connector if not specified
+    - available connectors: `SingCVMFSConnector`
+    - for custom connectors, contact xxx@illinois.edu
 - `supported_hpc?: Array<string>`: supported computing resources, see [doc](https://github.com/cybergis/cybergis-compute-core#supported-hpc--computing-resources). Default `['keeling_community']`
 - `default_hpc?: string`: default computing resources. Default to first defined in `supported_hpc`
 
