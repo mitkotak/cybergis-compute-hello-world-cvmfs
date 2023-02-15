@@ -1,6 +1,7 @@
 {
     "name": "hello world",
-    "container": "python",
+    "container": "cybergisx/0.8.0",
+    "connector": "SingCVMFSConnector",
     "pre_processing_stage": "python setup.py",
     "execution_stage": "bash main.sh",
     "post_processing_stage": "python cleanup.py",
